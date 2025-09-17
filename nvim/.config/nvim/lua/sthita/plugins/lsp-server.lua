@@ -29,7 +29,10 @@ return {
       ensure_installed = {
         
         "lua_ls",
-        
+        "gopls",
+        "rust_analyzer",
+        "pyright",
+        "clangd",
         
 
       },
@@ -39,7 +42,8 @@ return {
       ensure_installed = {
         
         "stylua", -- lua formatter
-        
+        "ruff",
+        "clang-format"
       },
     })
   end,

@@ -116,9 +116,43 @@ return {
       end,
 
       ["pyright"] = function()
-           lspconfig["pyright"].setup()
-end,
+           lspconfig["pyright"].setup({
+          capabilities=capabilities
+        })
+      end,
 
+      ["gopls"] = function()
+           lspconfig["gopls"].setup({
+           capabilities = capabilities,
+           settings = {
+                gopls = {
+                analyses = { unusedparams = true },
+                staticcheck = true,
+              },
+           },
+       })
+  end,
+    
+    ["rust_analyzer"] = function()
+           lspconfig["rust_analyzer"].setup({
+           capabilities = capabilities,
+           settings = {
+           ["rust-analyzer"] = {
+          cargo = { allFeatures = true },
+          checkOnSave = { command = "clippy" },
+          },
+        },
+      })
+   end,
+    
+      
+  ["clangd"] = function()
+    lspconfig["clangd"].setup({
+      capabilities = capabilities,
+      cmd = { "clangd", "--background-index" },
+    })
+  end,
+  
     }})
   end,
 }
