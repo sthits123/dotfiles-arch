@@ -114,6 +114,18 @@ return {
           },
         })
       end,
+      
+      ["solidity_ls_nomicfoundation"] = function()
+       lspconfig["solidity_ls_nomicfoundation"].setup({
+        capabilities = capabilities,
+        settings = {
+          solidity = {
+            includePath = "",   -- add custom import paths if needed
+            remapping = {},     -- remap imports if you use libraries like OpenZeppelin
+          },
+        },
+      })
+      end,
 
       ["pyright"] = function()
            lspconfig["pyright"].setup({

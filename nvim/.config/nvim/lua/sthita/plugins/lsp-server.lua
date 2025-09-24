@@ -33,8 +33,7 @@ return {
         "rust_analyzer",
         "pyright",
         "clangd",
-        
-
+       "solidity_ls_nomicfoundation",  
       },
     })
 
