@@ -57,7 +57,8 @@ window#waybar.hidden {
 #pulseaudio,
 #network,
 #clock,
-#tray {
+#tray
+{
   border-radius: 4px;
   margin: 6px 3px;
   padding: 6px 12px;
@@ -68,6 +69,9 @@ window#waybar.hidden {
 #custom-power {
   margin-right: 6px;
 }
+
+
+
 
 #custom-logo {
   padding-right: 7px;
@@ -120,6 +124,14 @@ window#waybar.hidden {
   background-color: #f2cdcd;
 }
 
+#custom-bluetooth {
+  background-color: #f9e2af;
+  padding: 6px 15px;      /* consistent padding like others */
+  min-width: 20px;        /* wider for better visibility */
+  border-radius: 4px;     /* matches other modules */
+  color: #333333;         /* dark text for contrast */
+  margin: 6px 3px;        /* consistent margin */
+}
 
 tooltip {
   border-radius: 8px;

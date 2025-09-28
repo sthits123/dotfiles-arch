@@ -14,6 +14,7 @@
         "tray",
         "memory",
         "network",
+        "custom/bluetooth",
       	"pulseaudio",
         "battery",
 	      "custom/power"
@@ -138,5 +139,12 @@
         "format": "󰤆",
         "tooltip": false,
         "on-click": "~/.config/rofi/powermenu/type-2/powermenu.sh &"
-    }
+    },
+
+    "custom/bluetooth": {
+    "format" : "",
+    "interval": 5,
+    "on-click": "blueman-manager"
+   }
+
 }

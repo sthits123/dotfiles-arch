@@ -1,38 +1,39 @@
 configuration {
-	font:							"JetBrainsMono Nerd Font Mono 10";
-    show-icons:                     true;
-	icon-theme: 					"WhiteSur";
-    display-drun: 					"";
-    drun-display-format:            "{name}";
-    disable-history:                false;
+	font:							      "JetBrainsMono Nerd Font Mono 10";
+  show-icons:             true;
+	icon-theme: 					  "WhiteSur";
+  display-drun: 					"";
+  drun-display-format:    "{name}";
+  disable-history:        false;
 	sidebar-mode: 					false;
 }
 
 * {
-    background:                     #00000000;
+    background:                   #00000000;
     background-alt:              	#00000000;
-    background-bar:                 #f2f2f215;
-    foreground:                     #f2f2f2EE;
-    accent:			            	#6BA0DE;
+    background-bar:               #f2f2f215;
+    border:                       #6BA0DE;
+    foreground:                   #f2f2f2EE;
+    accent:			            	    #6BA0DE;
 }
 
 window {
-    transparency:                   "real";
-    background-color:               rgba ( 46, 52, 62, 80 % );
-    text-color:                     @foreground;
-	border:							0px;
-	border-color:					@border;
-    border-radius:                  0px;
-	width:							100%;
-	height:							100%;
+    transparency:       "real";
+    background-color:   rgba ( 46, 52, 62, 80 % );
+    text-color:         @foreground;
+	  border:							0px;
+	  border-color:				@border;
+    border-radius:      0px;
+	  width:							100%;
+	  height:							100%;
 }
 
 prompt {
-    enabled: 						true;
+  enabled: 						true;
 	padding: 						0.30% 1% 0% -0.5%;
-	background-color: 				@background-alt;
-	text-color: 					@foreground;
-	font:							"JetBrainsMono Nerd Font Mono 12";
+	background-color: 	@background-alt;
+	text-color: 				@foreground;
+	font:							  "JetBrainsMono Nerd Font Mono 12";
 }
 
 entry {
@@ -70,9 +71,9 @@ listview {
 
 mainbox {
     background-color:               @background-alt;
-	border:							0% 0% 0% 0%;
+	  border:							              0% 0% 0% 0%;
     border-radius:                  0% 0% 0% 0%;
-	border-color:					@accent;
+	  border-color:					            @accent;
     children:                       [ inputbar, listview ];
     spacing:                       	8%;
     padding:                        10% 8.5% 10% 8.5%;
@@ -87,8 +88,8 @@ element {
 }
 
 element-icon {
-    background-color: 				@background-alt;
-    text-color:       				inherit;
+    background-color: 				      @background-alt;
+    text-color:       				      inherit;
     horizontal-align:               0.5;
     vertical-align:                 0.5;
     size:                           81px;
@@ -96,8 +97,8 @@ element-icon {
 }
 
 element-text {
-    background-color: 				@background-alt;
-    text-color:       				inherit;
+    background-color: 				      @background-alt;
+    text-color:       				      inherit;
     expand:                         true;
     horizontal-align:               0.5;
     vertical-align:                 0.5;
@@ -107,7 +108,7 @@ element-text {
 element selected {
     background-color:               rgba ( 107, 160, 222, 50 % );
     text-color:                     @foreground;
-	border:							0% 0% 0% 0%;
+	  border:							            0% 0% 0% 0%;
     border-radius:                  6px;
     border-color:                  	@accent;
 }

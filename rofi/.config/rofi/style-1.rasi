@@ -1,14 +1,15 @@
 configuration {
-	modi:                       "drun";
+   
+    modi:                       "window,drun,run,filebrowser,emoji";
     show-icons:                 true;
-    icon-theme: 				"WhiteSur";
+    icon-theme: 				        "WhiteSur";
     display-drun:               "";
     display-run:                "";
     display-filebrowser:        "";
     display-window:             "";
     display-emoji:              "󰞅";
     display-clipboard:          "";
-	drun-display-format:        "{name}";
+	drun-display-format:          "{name}";
     window-format:              "{t}";
 }
 
